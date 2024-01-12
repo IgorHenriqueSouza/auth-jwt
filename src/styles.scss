@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 
-body{
+body {
   background-color: #3e454d !important;
-  background-image: url('./assets/images/background.jpg');
-  background-position: center;
+  background-image: url("./assets/images/background.png");
+  //background-position: center;
   background-size: cover;
 }

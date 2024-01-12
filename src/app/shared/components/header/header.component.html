@@ -1,22 +1,47 @@
 <nav class="navbar navbar-expand-lg bg-dark text-light shadow-sm">
   <div class="container-fluid">
     <a class="navbar-brand text-light" href="#">AUTH | JWT</a>
-    <button *ngIf="isLogged === 'true'" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
+    <button
+      *ngIf="isLogged === 'true'"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
-      <ul *ngIf="isLogged === 'true'" class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+    <div
+      class="collapse navbar-collapse text-light"
+      id="navbarSupportedContent"
+    >
+      <ul
+        *ngIf="isLogged === 'true'"
+        class="navbar-nav me-auto mb-2 mb-lg-0 text-light"
+      >
         <li class="nav-item">
-          <a class="nav-link text-light active" aria-current="page" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+          <a
+            class="nav-link text-light active"
+            aria-current="page"
+            [routerLink]="['/home']"
+            routerLinkActive="router-link-active"
+            >Home</a
+          >
         </li>
         <li class="nav-item text-light">
-          <a class="nav-link text-light" href="#">Link</a>
+          <a class="nav-link text-light" href="#">Links</a>
         </li>
       </ul>
       <div class="box-buttons float-end">
-        <button *ngIf="isLogged === 'true'" class="btn btn-danger" (click)="logout()">Logout</button>
+        <button
+          *ngIf="isLogged === 'true'"
+          class="btn btn-danger"
+          (click)="logout()"
+        >
+          Logout
+        </button>
       </div>
     </div>
   </div>
